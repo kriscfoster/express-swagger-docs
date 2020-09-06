@@ -69,7 +69,7 @@ app.get('/authors', (req, res) => {
     {
       id: 1,
       title: "John Smith",
-    }
+    },
   ])
 });
 

@@ -1,7 +1,7 @@
 {
   "name": "express-swagger-docs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Automatically generate swagger docs based on jsdocs",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
