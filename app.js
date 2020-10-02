@@ -10,7 +10,7 @@ const swaggerOptions = {
       version: '1.0.0',
     },
   },
-  apis: ["index.js"],
+  apis: ["app.js"],
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
@@ -52,25 +52,6 @@ app.get('/books', (req, res) => {
  */
 app.post('/books', (req, res) => {
   res.status(201).send();
-});
-
-/**
- * @swagger
- * /authors:
- *   get:
- *     description: Get all authors
- *     responses:
- *       200:
- *         description: Success
- * 
- */
-app.get('/authors', (req, res) => {
-  res.send([
-    {
-      id: 1,
-      title: "John Smith",
-    },
-  ])
 });
 
 app.listen(5000, () => console.log("listening on 5000"));
